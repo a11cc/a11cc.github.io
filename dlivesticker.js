@@ -109,7 +109,7 @@ function createPage() {
 
 	const input = document.createElement("div");
 	input.classList.add("d-flex", "flex-row");
-	columnLeft.appendChild(input);document.querySelector("div.sign-register-buttons")
+	columnLeft.appendChild(input);
 
 	const fileButton = document.createElement("label");
 	fileButton.classList.add("btn", "btn-dark", "btn-lg", "text-dark");
@@ -145,7 +145,6 @@ function createPage() {
 	infoSize.classList.add("mt-1");
 	infoSize.textContent = "5MB maximum file size";
 	infoList.appendChild(infoSize);
-document.querySelector("div.sign-register-buttons")
 	const infoDimensions = document.createElement("li");
 	infoDimensions.classList.add("mt-1");
 	infoDimensions.textContent = "999px maximum width/height";
@@ -231,7 +230,7 @@ document.querySelector("div.sign-register-buttons")
 	bsjs.crossOrigin = "anonymous";
 	document.head.appendChild(bsjs);
 
-	bsjs.addEventListener("load", event =>document.querySelector("div.sign-register-buttons")
+	bsjs.addEventListener("load", event =>
 		(new bootstrap.Modal(modal)).show());
 
 	const cssLink = document.createElement("link");
